@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloform.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1> Realizar la compra</h1>
+ <div class="formulario">
+    <form action="" method="get" id="envioform" required><br>
+     <div> <label for="nombreform" ><br>
+            Nombre
+        </label>
+     </div>
+     <div>
+        <input type="text" id="nombreform" required><br>
+        <label for="nombreform" >
+            Apellido
+        </label>
+    </div>
+    <div>
+        <input type="text" id="apellidoform" required><br>
+        <label for="telefonoform" >
+            Teléfono de contacto
+        </label>
+    </div>
+    <div>
+        <input type="text" id="telefonoform"><br>
+        <label>
+            Seleccione el producto que desea comprar:
+        </label>
+    </div>
+        <div>
+        <input name="promo1" type="checkbox" name="promo1" value="pollo" id="chk1">
+        <label for="promo1">Pollo al horno con papas o ensalada</label>
+        
+        <div id="mostrarporcionpromo1" >
+        <label for="promo1porcion">Porciones:</label>
+        <select id="promo1porcion" name="Promo1porcion">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+           </select> 
+         </div>
+       </div>
+       <div>
+        <input name="promo2" type="checkbox" name="promo1" value="empanadas" id="chk2">
+        <label for="promo2">3 empanadas de carne, pollo o verdura</label>
+        <div id="mostrarporcionpromo2">
+           <label for="promo2porcion">Porciones:</label>
+           <select id="promo2porcion" name="Promo2porcion">
+              <option value="0">0</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+            </select> <br>
+          </div>
+        </div>
+        <div>  
+           <input name="promo3" type="checkbox" name="promo3" value="milanesa" id="chk3" >
+           <label for="promo3">Milanesa con papas o ensalada</label>
+           <div id="mostrarporcionpromo3">
+               <label for="promo3porcion">Porciones:</label>
+               <select id="promo3porcion" name="Promo3porcion">
+                 <option value="0">0</option>
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+               </select> 
+         </div>
+        </div>
+        <div>
+        <label> Agregar un comentario sobre modificación o cambios en los ingredientes de la compra</label><br>
+        <textarea name="mensaje" rows="10" cols="60">
+         </textarea><br>
+        </div>
+         <input type="submit">
+         
+    </form>
+ </div>
+</body>
+</html>
